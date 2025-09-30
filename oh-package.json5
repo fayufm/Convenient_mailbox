@@ -1,0 +1,13 @@
+{
+  "name": "convenient-mailbox",
+  "version": "1.0.0",
+  "description": "临时邮箱生成器",
+  "main": "index.js",
+  "author": "ConvenientMailbox Team",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@ohos/hvigor-ohos-plugin": "3.0.2",
+    "@ohos/hvigor": "3.0.2"
+  }
+}

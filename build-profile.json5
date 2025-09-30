@@ -1,0 +1,43 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "cert.cer",
+          "storePassword": "000000",
+          "keyAlias": "debugKey",
+          "keyPassword": "000000",
+          "profile": "UnsgnedReleasedProfileTemplate.json",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "UnsgnedReleasedProfileTemplate.p12"
+        }
+      }
+    ],
+    "compileSdkVersion": 9,
+    "compatibleSdkVersion": 9,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compileSdkVersion": 9,
+        "compatibleSdkVersion": 9
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
