@@ -1,0 +1,13 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "Temp Mailbox"
+    },
+    {
+      "name": "app_description",
+      "value": "Personal Email Management Tool - Generate temporary mailboxes quickly to protect privacy"
+    }
+  ]
+}
+

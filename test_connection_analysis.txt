@@ -1,0 +1,26 @@
+=== onTestCustomMailboxConnection() 方法括号分析 (line 4997-5075) ===
+
+Line 4997: +1 -0 =>  0 ->  1  |  async onTestCustomMailboxConnection() {
+Line 5001: +1 -0 =>  1 ->  2  |  if (!validation.valid) {
+Line 5003: +0 -1 =>  2 ->  1  |  `?\n${validation.missingFields.join('\n'`)}`      )
+Line 5005: +0 -1 =>  1 ->  0  |  }
+Line 5007: +1 -0 =>  0 ->  1  |  try {
+         ^^^ TRY block starts
+Line 5018: +1 -0 =>  1 ->  2  |  try {
+         ^^^ TRY block starts
+Line 5020: +1 -0 =>  2 ->  3  |  const smtpConfig: Record<string, string> = {
+Line 5026: +0 -1 =>  3 ->  2  |  }
+Line 5044: +1 -1 =>  2 ->  2  |  } catch (error) {
+         ^^^ CATCH block
+Line 5049: +0 -1 =>  2 ->  1  |  }
+Line 5054: +1 -0 =>  1 ->  2  |  if (smtpSuccess) {
+Line 5060: +1 -1 =>  2 ->  2  |  } else {
+Line 5067: +0 -1 =>  2 ->  1  |  }
+Line 5068: +0 -1 =>  1 ->  0  |  }
+Line 5069: +1 -0 =>  0 ->  1  |  catch (error) {
+Line 5075: +0 -1 =>  1 ->  0  |  }
+Line 5076: +0 -1 =>  0 -> -1  |  }
+         !!! WARNING: Negative count!
+
+最终 brace_count: -1
+✗ 方法括号不平衡: -1

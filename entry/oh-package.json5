@@ -1,0 +1,10 @@
+{
+  "name": "entry",
+  "version": "1.0.0",
+  "description": "Convenient Mailbox主模块 - 临时邮箱管理核心功能",
+  "main": "src/main/ets/pages/Index",
+  "author": "ConvenientMailbox Team",
+  "license": "MIT",
+  "dependencies": {}
+}
+

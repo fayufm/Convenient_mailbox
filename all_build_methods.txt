@@ -1,0 +1,33 @@
+=== 查找所有build方法 ===
+
+
+=== build()方法定义 (1) ===
+
+>>> Line 6573 <<<
+    // ==================== 主界面构建 (build方法必须最后) ====================
+  
+    build() {
+      // 🔒 DEBUG: 记录build()执行状态
+      hilog.info(AppConstants.LOG_DOMAIN, AppConstants.LOG_TAG,
+
+
+=== @Builder装饰器 (12) ===
+总共发现 12 个 @Builder 方法
+前10个:
+  Line 998: @Builder renderCustomDaysDialog() {
+  Line 1066: @Builder renderStartupAnimation() {
+  Line 1112: @Builder renderMenuButton(text: string, action: () => void, textColor: ResourceColor) {
+  Line 1127: @Builder renderHelpDialog() {
+  Line 1199: @Builder renderHelpSection(section: HelpSection, index: number) {
+  Line 1325: @Builder renderFAB() {
+  Line 1413: @Builder renderLoadingState() {
+  Line 1463: @Builder renderNavigation() {
+  Line 1482: @Builder renderInboxNavButton() {
+  Line 1511: @Builder renderNavButton(textKey: string, page: PageType, showBadge: boolean, badgeCount: number) {
+
+=== struct Index 范围 ===
+Start: Line 82
+End: Line 7023
+
+=== build()方法位置验证 ===
+✓ Line 6573: 在struct内部

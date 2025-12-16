@@ -1,0 +1,82 @@
+=== build() 方法全面分析 (line 6573-6918) ===
+
+Line 6573: br[ 0-> 1] par[ 0-> 0] <<< METHOD START  |  build() {
+Line 6574: br[ 1-> 1] par[ 0-> 0] <<< METHOD START  |  // ? DEBUG: ?build()?
+Line 6576: br[ 1-> 1] par[ 1-> 0] <<< METHOD START  |  `? DEBUG: build()? - isLoading=${this.isLoading}, currentPage=${this.currentPage}, errorMessa
+Line 6577: br[ 1-> 2] par[ 0-> 0]  |  Column() {
+Line 6578: br[ 2-> 3] par[ 0-> 0]  |  if (this.isLoading) {
+Line 6581: br[ 3-> 3] par[ 0-> 0]  |  } else {
+Line 6585: br[ 3-> 4] par[ 0-> 0]  |  // ??        Scroll() {
+Line 6586: br[ 4-> 5] par[ 0-> 0]  |  Column({ space: 0 }) {
+Line 6588: br[ 5-> 6] par[ 0-> 0]  |  if (this.currentPage === PageType.CREATE) {
+Line 6589: br[ 6-> 7] par[ 0-> 1]  |  CreateMailboxPage({
+Line 6619: br[ 7-> 7] par[ 1-> 1]  |  onNavigateToSettings: () => { this.currentPage = PageType.SETTINGS },
+Line 6621: br[ 7-> 6] par[ 1-> 0]  |  })
+Line 6622: br[ 6-> 6] par[ 0-> 0]  |  } else if (this.currentPage === PageType.INBOX) {
+Line 6623: br[ 6-> 7] par[ 0-> 1]  |  InboxPage({
+Line 6653: br[ 7-> 8] par[ 1-> 1]  |  onEmailClick: (email: EmailData) => {
+Line 6656: br[ 8-> 9] par[ 1-> 1]  |  if (!email.read) {
+Line 6658: br[ 9-> 8] par[ 1-> 1]  |  }
+Line 6659: br[ 8-> 7] par[ 1-> 1]  |  },
+Line 6660: br[ 7-> 8] par[ 1-> 1]  |  onSentEmailClick: (sentEmail: SentEmailData) => {
+Line 6663: br[ 8-> 7] par[ 1-> 1]  |  },
+Line 6665: br[ 7-> 6] par[ 1-> 0]  |  })
+Line 6666: br[ 6-> 6] par[ 0-> 0]  |  } else if (this.currentPage === PageType.MAILBOXES) {
+Line 6667: br[ 6-> 7] par[ 0-> 1]  |  MailboxesPage({
+Line 6712: br[ 7-> 8] par[ 1-> 1]  |  onMailboxClick: (mailbox: MailboxData) => {
+Line 6715: br[ 8-> 7] par[ 1-> 1]  |  }
+Line 6716: br[ 7-> 6] par[ 1-> 0]  |  })
+Line 6717: br[ 6-> 6] par[ 0-> 0]  |  } else if (this.currentPage === PageType.COMPOSE) {
+Line 6718: br[ 6-> 7] par[ 0-> 1]  |  ComposePage({
+Line 6746: br[ 7-> 6] par[ 1-> 0]  |  })
+Line 6747: br[ 6-> 6] par[ 0-> 0]  |  } else if (this.currentPage === PageType.SETTINGS) {
+Line 6748: br[ 6-> 7] par[ 0-> 1]  |  SettingsPage({
+Line 6818: br[ 7-> 6] par[ 1-> 0]  |  })
+Line 6819: br[ 6-> 5] par[ 0-> 0]  |  }
+Line 6820: br[ 5-> 4] par[ 0-> 0]  |  }
+Line 6822: br[ 4-> 4] par[ 0-> 0]  |  .padding({ left: 16, right: 16, bottom: 16, top: 0 })
+Line 6824: br[ 4-> 4] par[ 0-> 0]  |  .constraintSize({ minHeight: '100%' })
+Line 6825: br[ 4-> 3] par[ 0-> 0]  |  }
+Line 6830: br[ 3-> 2] par[ 0-> 0]  |  }
+Line 6832: br[ 2-> 3] par[ 0-> 0]  |  // if (this.showEmailDetail && this.selectedEmail) {
+Line 6834: br[ 3-> 2] par[ 0-> 0]  |  // }
+Line 6836: br[ 2-> 3] par[ 0-> 0]  |  // ????      if (this.showSentEmailDetail && this.selectedSentEmail) {
+Line 6838: br[ 3-> 2] par[ 0-> 0]  |  // }
+Line 6841: br[ 2-> 3] par[ 0-> 0]  |  // if (this.showImagePreview && this.previewImageUri) {
+Line 6843: br[ 3-> 2] par[ 0-> 0]  |  // }
+Line 6846: br[ 2-> 3] par[ 0-> 0]  |  if (this.showHelpDialog) {
+Line 6848: br[ 3-> 2] par[ 0-> 0]  |  }
+Line 6851: br[ 2-> 3] par[ 0-> 0]  |  // if (this.showTemplateDialog) {
+Line 6853: br[ 3-> 2] par[ 0-> 0]  |  // }
+Line 6856: br[ 2-> 3] par[ 0-> 0]  |  // if (this.showCreateTemplateDialog) {
+Line 6858: br[ 3-> 2] par[ 0-> 0]  |  // }
+Line 6861: br[ 2-> 3] par[ 0-> 0]  |  // if (this.showCreateFolderDialog) {
+Line 6863: br[ 3-> 2] par[ 0-> 0]  |  // }
+Line 6866: br[ 2-> 3] par[ 0-> 0]  |  // if (this.showMoveFolderDialog) {
+Line 6868: br[ 3-> 2] par[ 0-> 0]  |  // }
+Line 6871: br[ 2-> 3] par[ 0-> 0]  |  // if (this.showCreateTagDialog) {
+Line 6873: br[ 3-> 2] par[ 0-> 0]  |  // }
+Line 6876: br[ 2-> 3] par[ 0-> 0]  |  // if (this.showAddTagDialog) {
+Line 6878: br[ 3-> 2] par[ 0-> 0]  |  // }
+Line 6881: br[ 2-> 3] par[ 0-> 0]  |  // if (this.showStatsDialog) {
+Line 6883: br[ 3-> 2] par[ 0-> 0]  |  // }
+Line 6886: br[ 2-> 3] par[ 0-> 0]  |  // if (this.showNoteDialog) {
+Line 6888: br[ 3-> 2] par[ 0-> 0]  |  // }
+Line 6891: br[ 2-> 3] par[ 0-> 0]  |  // if (this.showQRCodeDialog) {
+Line 6893: br[ 3-> 2] par[ 0-> 0]  |  // }
+Line 6896: br[ 2-> 3] par[ 0-> 0]  |  if (this.enableFAB) {
+Line 6898: br[ 3-> 2] par[ 0-> 0]  |  }
+Line 6901: br[ 2-> 3] par[ 0-> 0]  |  // if (this.showMailboxActionsMenu && this.selectedMailbox) {
+Line 6903: br[ 3-> 2] par[ 0-> 0]  |  // }
+Line 6906: br[ 2-> 3] par[ 0-> 0]  |  if (this.showCustomDaysDialog) {
+Line 6908: br[ 3-> 2] par[ 0-> 0]  |  }
+Line 6911: br[ 2-> 3] par[ 0-> 0]  |  if (this.showStartupAnimation) {
+Line 6913: br[ 3-> 2] par[ 0-> 0]  |  }
+Line 6914: br[ 2-> 1] par[ 0-> 0]  |  }
+Line 6918: br[ 1-> 0] par[ 0-> 0]  |  }
+
+=== 最终统计 ===
+Brace count: 0 (期望: 0)
+Paren count: 0 (期望: 0)
+
+=== 发现的问题 (0) ===

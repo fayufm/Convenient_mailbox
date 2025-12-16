@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storeFile": "E:/HMos/Convenient_mailbox/Release_Cert/release.p12",
+          "storePassword": "0000002521F12316E3F234D3DA6C92E27DF44E6C642B4153928D4C02A0F99CB646AEBAC22B1A9EC49612B9AA858B9733D08858B8C8",
+          "keyAlias": "releaseKey",
+          "keyPassword": "00000025F992CA6E3683A9B9A0F0050430748CA8240B12D446874AF7CFC207C693AFE85DC6346763DC6E10AFCCEA2884BD5C3383EC",
+          "signAlg": "SHA256withECDSA",
+          "profile": "E:/HMos/Convenient_mailbox/Release_Cert/Convenient_Mailbox_ReleaseRelease.p7b",
+          "certpath": "E:/HMos/Convenient_mailbox/Release_Cert/Convenient_Mailbox_Release.cer"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "6.0.0(20)",
+        "compatibleSdkVersion": "6.0.0(20)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

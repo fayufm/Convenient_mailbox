@@ -1,0 +1,32 @@
+=== 问题行分析 ===
+
+Line 93:
+  Raw: "  // 鉁?鏀朵欢绠?鍙戜欢绠卞垏鎹?  @State inboxMode: 'inbox' | 'outbox' = 'inbox'  // inbox=鏀朵欢绠? outbox=鍙戜欢绠?  @State sentEmails: SentEmailData[] = []          // 宸插彂閫佺殑閭\ue1bb欢鍒楄〃\n"
+  @State count: 2
+  Contains '?': True
+
+Line 94:
+  Raw: '  @State selectedSentEmail: SentEmailData | null = null  // 変腑鐨勫凡侀  @State showSentEmailDetail: boolean = false      // 鏄剧插彂侀惰\ue1db鎯  @State selectedSentEmailIds: Set<number> = new Set() ? // 鎵归噺変腑鐨勫凡侀禝D\n'
+  @State count: 3
+  Contains '?': True
+
+Line 95:
+  Raw: '  @State isSelectMode: boolean = false             // 鏄\ue21a惁勪簬鎵归噺妯″紡\n'
+  @State count: 1
+  Contains '?': False
+
+Line 102:
+  Raw: '  @State inboxBadgeCount: number = 0      // \ue047\ue1f0\ue1bb  @State mailboxesBadgeCount: number = 0  // \ue1be\ue188鎬绘暟\n'
+  @State count: 2
+  Contains '?': False
+
+Line 104:
+  Raw: '  // 鉁?UI寮哄埗鍒锋柊璁℃暟鍣\ue7d2紙姣忔\ue0bc鏁版嵁鍙樺寲鏃堕€掑\ue583锛屽己鍒禙orEach閲嶆柊娓叉煋锛?  @State mailboxListRefreshKey: number = 0\n'
+  @State count: 1
+  Contains '?': True
+
+Line 105:
+  Raw: '  @State emailListRefreshKey: number = 0      // 鏀朵遍垪琛ㄥ  @State sentEmailListRefreshKey: number = 0  // 戜遍垪琛ㄥ  @State statsRefreshKey: number = 0          // 缁熻\ue178版嵁\n'
+  @State count: 3
+  Contains '?': False
+

@@ -1,0 +1,33 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "Temporary Mailbox Main Module"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Temporary Mailbox Application Entry"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "Temp Mailbox"
+    },
+    {
+      "name": "permission_internet_reason",
+      "value": "Network permission is required to connect to email servers and receive emails"
+    },
+    {
+      "name": "permission_network_info_reason",
+      "value": "Network status information is required to ensure proper service operation"
+    },
+    {
+      "name": "confirmClearData",
+      "value": "Clear All Data"
+    },
+    {
+      "name": "confirmClearDataMessage",
+      "value": "This will delete all your data. Are you sure?"
+    }
+  ]
+}
+

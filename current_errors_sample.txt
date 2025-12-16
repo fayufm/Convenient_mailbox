@@ -1,0 +1,9 @@
+﻿Error Message: Property 'updateUITexts' does not exist on type 'Index'. At File: E:/HMos/Convenient_mailbox/entry/src/main/ets/pages/Index.ets:295:12
+Error Message: Property 'selectedMailboxIndex' does not exist on type 'Index'. At File: E:/HMos/Convenient_mailbox/entry/src/main/ets/pages/Index.ets:303:14
+Error Message: UI component 'Text' cannot be used in this place. At File: E:/HMos/Convenient_mailbox/entry/src/main/ets/pages/Index.ets:305:13
+Error Message: Cannot find name '鐢瓕'. At File: E:/HMos/Convenient_mailbox/entry/src/main/ets/pages/Index.ets:305:34
+Error Message: Property 'selectedMailboxIndex' does not exist on type 'Index'. At File: E:/HMos/Convenient_mailbox/entry/src/main/ets/pages/Index.ets:305:119
+Error Message: Object is possibly 'undefined'. At File: E:/HMos/Convenient_mailbox/entry/src/main/ets/pages/Index.ets:305:143
+Error Message: Property 'mailboxes' does not exist on type 'Index'. At File: E:/HMos/Convenient_mailbox/entry/src/main/ets/pages/Index.ets:305:143
+Error Message: Cannot find name '$'. At File: E:/HMos/Convenient_mailbox/entry/src/main/ets/pages/Index.ets:305:149
+Error Message: Property 'selectedMailboxIndex' does not exist on type 'Index'. At File: E:/HMos/Convenient_mailbox/entry/src/main/ets/pages/Index.ets:305:151

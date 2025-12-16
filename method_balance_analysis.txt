@@ -1,0 +1,38 @@
+找到 28 个async方法 (line 83-3040):
+
+OK Line  299: aboutToAppear                  balance= +0
+OK Line  321: onPageShow                     balance= +0
+OK Line  339: retryMailboxManagerInit        balance= +0
+OK Line  391: initializeApp                  balance= +0
+OK Line  622: autoFixFeatureConflicts        balance= +0
+OK Line  816: loadQuotaInfo                  balance= +0
+OK Line 2091: onGenerateMailbox              balance= +0
+OK Line 2139: copyCurrentEmail               balance= +0
+OK Line 2148: checkNewEmails                 balance= +0
+OK Line 2207: onRefreshEmails                balance= +0
+OK Line 2235: checkExpiringMailboxes         balance= +0
+OK Line 2274: onEmailClick                   balance= +0
+OK Line 2334: onClearAllSentEmails           balance= +0
+OK Line 2361: onDeleteSelectedSentEmails     balance= +0
+OK Line 2406: onDeleteMailbox                balance= +0
+OK Line 2423: onCleanupExpired               balance= +0
+OK Line 2433: onTogglePinMailbox             balance= +0
+OK Line 2483: onCopyMailboxAddress           balance= +0
+OK Line 2496: onShowExtendExpiryDialog       balance= +0
+OK Line 2540: onExtendExpiry                 balance= +0
+OK Line 2577: onShowReduceExpiryDialog       balance= +0
+OK Line 2621: onReduceExpiry                 balance= +0
+OK Line 2666: onToggleBlockMailbox           balance= +0
+OK Line 2721: onApplyCustomDays              balance= +0
+OK Line 2757: onLoadDraft                    balance= +0
+OK Line 2791: onSaveDraft                    balance= +0
+ERR Line 2818: onSendEmail                    balance= -2
+     ^^^^ 问题! 这个方法的括号不平衡 (-2)
+     方法范围: line 2818 - 3038
+     → 多余 2 个关闭括号 } (或缺少开括号 {)
+
+ERR Line 3039: onExportData                   balance= +1
+     ^^^^ 问题! 这个方法的括号不平衡 (+1)
+     方法范围: line 3039 - 3039
+     → 缺少 1 个关闭括号 }
+

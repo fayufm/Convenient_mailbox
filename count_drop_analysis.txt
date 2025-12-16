@@ -1,0 +1,40 @@
+=== 查找try块内count从2降低的位置 ===
+
+
+>>> TRY BLOCK STARTS at line 2871, count should be 2 (method+try)
+Line 2871: count  1 ->  2  (+1 -0)  |  try {
+Line 2880: count  2 ->  3  (+1 -0)  |  if (this.composeFrom && this.composeFrom.startsWith('[?')) {
+Line 2887: count  3 ->  4  (+1 -0)  |  if (validation.valid) {
+Line 2893: count  4 ->  4  (+2 -2)  |  '?SMTP') email=%{public}s, displayName=%{public}s','            t
+Line 2895: count  4 ->  4  (+1 -1)  |  } else {
+Line 2906: count  4 ->  3  (+0 -1)  |  }
+Line 2907: count  3 ->  3  (+1 -1)  |  } else {
+Line 2913: count  3 ->  2  (+0 -1)  |  }
+Line 2919: count  2 ->  3  (+1 -0)  |  if (useSMTP) {
+Line 2922: count  3 ->  3  (+1 -1)  |  } else {
+Line 2924: count  3 ->  2  (+0 -1)  |  }
+Line 2926: count  2 ->  2  (+1 -1)  |  // ????      const maskedTo = toTrimmed.replace(/(.{2}).*(@
+Line 2938: count  2 ->  3  (+1 -0)  |  if (useSMTP && useCustomMailbox) {
+Line 2940: count  3 ->  4  (+1 -0)  |  smtpConfig = {
+Line 2946: count  4 ->  3  (+0 -1)  |  }
+Line 2953: count  3 ->  2  (+0 -1)  |  }
+Line 2968: count  2 ->  3  (+1 -0)  |  const sentRecord: SentEmailData = {
+Line 2978: count  3 ->  2  (+0 -1)  |  }
+Line 2987: count  2 ->  3  (+1 -0)  |  if (result.success) {
+Line 2998: count  3 ->  3  (+1 -1)  |  } else {
+Line 3006: count  3 ->  4  (+1 -0)  |  // HTTP 403??        // ?403?
+Line 3010: count  4 ->  4  (+1 -1)  |  // ??        } else if (friendlyError.includes
+Line 3011: count  4 ->  4  (+1 -1)  |  friendlyError = 'API?'        } else if (friendlyError.incl
+Line 3013: count  4 ->  4  (+1 -1)  |  } else if (friendlyError.includes('HTTP 429')) {
+Line 3015: count  4 ->  4  (+1 -1)  |  } else if (friendlyError.includes('timeout') || friendlyError.includes('
+Line 3017: count  4 ->  4  (+1 -1)  |  } else if (friendlyError.includes('?')) {
+Line 3018: count  4 ->  4  (+1 -1)  |  // ??        } else if (friendlyError.includes
+Line 3020: count  4 ->  4  (+1 -1)  |  } else if (friendlyError.length > 100) {
+Line 3022: count  4 ->  3  (+0 -1)  |  }
+Line 3025: count  3 ->  2  (+0 -1)  |  }
+Line 3026: count  2 ->  1  (+0 -1)  |  }
+    !!! COUNT DROPPED BELOW 2 (from 2 to 1) !!!
+    This is line 3026, in try block starting at line 2871
+    Line content: }
+
+Line 3027: count  1 ->  1  (+1 -1)  |  } catch (error) {

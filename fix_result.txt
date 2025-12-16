@@ -1,0 +1,4 @@
+Final cleanup complete!
+- Removed duplicate inboxBadgeCount (Line 104)
+- Removed duplicate mailboxesBadgeCount (Line 105)
+- Removed malformed lines with multiple @State

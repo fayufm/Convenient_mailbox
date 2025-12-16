@@ -1,0 +1,36 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "临时邮箱主模块"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "临时邮箱应用主入口"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "临时邮箱"
+    },
+    {
+      "name": "permission_internet_reason",
+      "value": "需要网络权限以连接邮件服务器和接收邮件"
+    },
+    {
+      "name": "permission_network_info_reason",
+      "value": "需要获取网络状态信息以确保服务正常运行"
+    },
+    {
+      "name": "permission_pasteboard_reason",
+      "value": "需要访问剪贴板以方便复制邮箱地址和邮件内容"
+    },
+    {
+      "name": "confirmClearData",
+      "value": "清除所有数据"
+    },
+    {
+      "name": "confirmClearDataMessage",
+      "value": "这将删除您的所有数据。您确定吗？"
+    }
+  ]
+}
