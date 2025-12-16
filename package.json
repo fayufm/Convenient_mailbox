@@ -1,0 +1,19 @@
+{
+  "name": "convenient-mailbox",
+  "version": "1.0.0",
+  "description": "临时邮箱生成器 - 鸿蒙应用",
+  "main": "index.js",
+  "author": "ConvenientMailbox Team",
+  "license": "MIT",
+  "scripts": {
+    "build": "hvigor assembleHap --mode module -p product=default",
+    "clean": "hvigor clean",
+    "debug": "hvigor assembleHap --mode module -p product=default -p debuggable=true",
+    "release": "hvigor assembleHap --mode module -p product=default -p debuggable=false"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@ohos/hvigor-ohos-plugin": "3.0.2",
+    "@ohos/hvigor": "3.0.2"
+  }
+}
