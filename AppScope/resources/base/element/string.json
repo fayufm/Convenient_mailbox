@@ -1,0 +1,12 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "临时邮箱"
+    },
+    {
+      "name": "app_description",
+      "value": "个人邮箱管理工具 - 快速生成临时邮箱，保护隐私安全"
+    }
+  ]
+}

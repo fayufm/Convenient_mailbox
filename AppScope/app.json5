@@ -1,0 +1,13 @@
+{
+  "app": {
+    "bundleName": "com.convenient.mailbox",
+    "vendor": "ConvenientMailbox",
+    "versionCode": 1000000,
+    "versionName": "1.0.0",
+    "icon": "$media:mail_1",
+    "label": "$string:app_name",
+    "description": "$string:app_description",
+    "minCompatibleVersionCode": 1000000,
+    "distributedNotificationEnabled": true
+  }
+}
